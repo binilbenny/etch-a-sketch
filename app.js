@@ -15,18 +15,11 @@ rageInput.addEventListener('click', function (){
     newgrid();
 })
 
-// take the input from the slider and build the new grid
 
-rageInput.addEventListener('touchmove', function (){
-    gridRemove();
-    size.textContent=rageInput.value;
-    num = rageInput.value;
-    newgrid();
-})
 
 // take the input from the slider and build the new grid
 
-rageInput.addEventListener('mousemove', function (){
+rageInput.addEventListener('touchend', function (){
     gridRemove();
     size.textContent=rageInput.value;
     num = rageInput.value;
