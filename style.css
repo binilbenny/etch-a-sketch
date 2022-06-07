@@ -1,0 +1,105 @@
+body{
+ background-color: rgb(105, 90, 90);
+ color: rgb(148, 165, 190);
+ font-family: Arial, Helvetica;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+}
+#title h1{
+    font-size: 4em;
+    text-shadow: 0 3px 0 #ccc, 0 3px 0 #ccc;
+}
+
+#skethPad
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#drawingBord
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.squr{
+    background-color: rgb(111, 49, 49);
+}
+
+
+#drawingControl
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#drawingControl
+button
+{
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    
+}
+button
+{
+    box-shadow: none;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 2s, box-shadow 1s;
+    
+}
+
+button:hover
+{
+    box-shadow:  -4px -4px 4px 4px rgba(4, 75, 241, 0.5), 4px 4px 4px 4px rgba(4, 75, 241, 0.5);
+}
+
+.selector
+{
+    background-color: rgb(21, 7, 72);
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+#color
+{
+    border: none;
+    padding: 0px;
+    width: 40px;
+    height: 30px;
+    transition: background-color 2s;
+}
+
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    
+  }
+  
+  
+
+  input[type=range]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 275px;
+    padding: 0 5px;
+}
+
+
+.slider
+{
+    font-size: larger;
+    color: bisque;
+    text-shadow: 2px 2px black;
+}
