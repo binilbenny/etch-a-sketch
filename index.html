@@ -9,6 +9,30 @@
 </head>
 <body>
     
+    <div id="container">
+        <div id="title"><h1><b>ETCH-A-SKETCH</b></h1></div>
+        <div id="skethPad">
+
+            <!--16x16 grid of div element  -->
+            <div id="drawingBord" class="grid"></div> 
+            <div id="drawingControl">
+                <!-- button -->
+                <button class="color">color <input type="color" id="color" value="#345520"></button>
+                <button class="black">black</button>
+                <button class="randomColor">random color</button>
+                <button class="eraser">eraser</button>
+                <button class="reset">reset</button>
+            </div>
+            <div>
+                <!-- slider to add more div to the grid -->
+            <p class="slider">Grid size</p>
+            <input type="range" min="1" max="100" id="slider" class="slider" value="16">
+             <p id="size" class="slider"></p>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script src="app.js"></script>
